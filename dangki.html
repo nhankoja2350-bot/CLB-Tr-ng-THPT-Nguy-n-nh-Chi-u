@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CLB trường THPT Nguyễn Đình Chiểu</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="body_form">
+        <form class="clb-form" action="#" method="post" enctype="multipart/form-data">
+
+            <h2>ĐĂNG KÝ THAM GIA CÂU LẠC BỘ</h2>
+
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="fullname" placeholder="Nhập họ và tên" required>
+            </div>
+
+            <div class="form-group">
+                <label for="class">Lớp</label>
+                <input type="text" id="class" name="class" placeholder="VD: 12/1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Ngày tháng năm sinh</label>
+                <input type="date" id="date" name="birthday" required>
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính</label>
+
+                <div class="radio-group">
+                    <label class="radio-item">
+                    <input type="radio" name="gender" value="Nam">
+                    <span>Nam</span>
+                    </label>
+
+                    <label class="radio-item">
+                    <input type="radio" name="gender" value="Nữ">
+                    <span>Nữ</span>
+                    </label>
+
+                    <label class="radio-item">
+                    <input type="radio" name="gender" value="Khác">
+                    <span>Khác</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích</label>
+                <textarea name="hobby" placeholder="Nhập sở thích của bạn"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Địa chỉ</label>
+                <textarea name="address" placeholder="Nhập địa chỉ"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Chọn CLB</label>
+                <select name="club" required>
+                    <option value="">-- Chọn câu lạc bộ --</option>
+                    <option value="the-thao">CLB Thể thao </option>
+                    <option value="truyen-thong">CLB Truyền thông</option>
+                    <option value="thien-nguyen">CLB Thiện nguyện</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gửi file</label>
+                <input type="file" name="file">
+            </div>
+
+            <button type="submit">Gửi đăng ký</button>
+
+            <hr>
+
+            <a href="Bài nhóm.html"><button type="button" value="Quay lại">Quay lại</button></a>
+        </form>
+    </body>
+</html>
